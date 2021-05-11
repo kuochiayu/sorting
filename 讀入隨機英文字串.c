@@ -13,7 +13,7 @@ int main()
     char text[LEN];
     char words[idx][LEN];
     FILE *fp = NULL;
-    fp = fopen("D:\\Users\\desktop\\sort\\dataset2.txt","a");//在指定目录下创建.txt文件
+    fp = fopen("D:\\Users\\desktop\\sort\\dataset2.txt","a");//在指定目錄建.txt文件
     memset(text, 1, LEN);
     for (int j=0; j<idx; j++) 
     {
@@ -28,9 +28,9 @@ int main()
     //text[LEN-1] = 0;
     for(int i=0; i<idx; i++)
     {
-        printf("%d:\t%s\n", i+1, words[i]);
-        fprintf(fp,"%s\n",words[i]); //把随机数写进文件
+        //printf("%d:\t%s\n", i+1, words[i]);
+        fprintf(fp,"%s\n",words[i]); //把隨機寫進文件
     }
-    fclose(fp); //关闭文件
+    fclose(fp); //關閉文件
 
 }
