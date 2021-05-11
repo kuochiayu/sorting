@@ -12,7 +12,7 @@ int main(void)
 	for(i = 0 ; i < 1000000 ; i ++) //產生10000000個隨機數
 	{
 		j = rand()%100 ;
-		printf("j:%d\n",j);
+		//printf("j:%d\n",j);
         	fprintf(fp,"%d\n",j); //寫進文件
     }
     fclose(fp); //關閉文件
